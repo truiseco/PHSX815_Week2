@@ -110,11 +110,12 @@ int main(int argc, char* argv[]){
 
   // configure and display figure, results of all experiments displayed together
   plt::hist(data, Ncat, "b");
-  plt::title("Uniform categorical distribution");
-  plt::xlabel("x");
+  plt::title("Uniform Categorical Distribution");
+  plt::xlabel("Category");
   plt::ylabel("Counts");
 
   plt::show();
+  plt::savefig("HW3Plot.png");
 
   return 0;
 }
